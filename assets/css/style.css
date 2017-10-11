@@ -1,0 +1,72 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	position: relative;
+	text-align: center;
+	font-family: 'Bree Serif', serif;
+}
+
+body:after {
+	content : "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url(../images/bg_trivia_mono.jpg);
+	width: 100%;
+	min-height: 100vh;
+	opacity : 0.2;
+	z-index: -1;
+}
+
+ul {
+	list-style-type: none;
+	list-style-position: outside;
+	padding: 0;
+	font-size: 1.2em;	
+}
+
+.jumbotron {
+	font-family: 'Fascinate Inline', cursive;
+	text-align: center;
+	padding: 15px 0 !important;
+}
+
+.col-md-6 {
+	height: 400px;
+	padding: 20px 50px;
+	border: 3px solid;
+}
+
+#explain {
+	font-size: 1.5em;
+	/*font-weight: bold;*/
+	margin-bottom: 10px;
+}
+
+#question, #result, #ending {
+	font-size: 1.8em;
+	text-decoration: underline;
+	margin-bottom: 30px;
+}
+
+.exitem {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+#correct {
+	color: red;
+	font-weight: bold;
+}
+
+#answer {
+	width: 300px;
+	height: 200px;
+}
+
+#startBtn {
+	margin-top: 30px;
+}

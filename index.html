@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Trivia Game</title>
+
+	<link rel="icon" sizes="32x32" href="assets/images/icon_trivia.jpg">
+
+	<link href="https://fonts.googleapis.com/css?family=Bree+Serif|Fascinate+Inline" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<script src="assets/javascript/app.js"></script>	
+</head>
+<body>
+	<header>
+	</header>
+
+	<div id="wrapper" class="content">
+		<section class="jumbotron">
+			<h1 class="display-3">Totally Trivial Trivia!</h1>
+		</section>
+
+		<section class="row">
+			<div class="col-md-3">&nbsp;</div>
+			<div class="col-md-6">
+				<div id="explain">&nbsp;</div>
+				<div id="quizarea" style="display:none">
+					<p id="question">&nbsp;</p>
+					<ul id="example">
+						<li id="ex1" class="exitem" value="1"></li>
+						<li id="ex2" class="exitem" value="2"></li>
+						<li id="ex3" class="exitem" value="3"></li>
+						<li id="ex4" class="exitem" value="4"></li>
+					</ul>
+				</div>
+				<div id="ansarea" style="display:none">
+					<p id="result">&nbsp;</p>
+					<p id="correct">&nbsp;</p>
+					<img id="answer" src="#">
+				</div>
+				<div id="endarea" style="display:none">
+					<p id="ending">&nbsp;</p>
+					<ul id="endstat">&nbsp;</ul>
+				</div>
+
+				<button id="startBtn" class="btn btn-primary btn-lg" role="button">Game Start</button>
+			</div>
+			<div class="col-md-3">&nbsp;</div>
+		</section>
+	</div>
+</body>
+</html>
+
