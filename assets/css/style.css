@@ -62,11 +62,12 @@ ul {
 	font-weight: bold;
 }
 
-#answer {
+.giphy-embed {
 	width: 300px;
-	height: 200px;
+	height: 200px;	
 }
 
 #startBtn {
 	margin-top: 30px;
 }
+

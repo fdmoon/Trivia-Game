@@ -20,16 +20,16 @@ function Quiz(question, example, oknum, image) {
 var quizArray = [
 	new Quiz("Who won super bowl 2017?",
 			["Atlanta Falcons", "New England Patriots", "Dallas Cowboys", "Houston Texans"],
-			2, "assets/images/SuperBowl2017_img.jpg"),
+			2, '<iframe src="https://giphy.com/embed/l3q2WFGeobn92Aef6" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>'),
 	new Quiz("In the movie \"The Wizard of Oz\", what did the Scarecrow want from the wizard?",
 			["A brain", "Courage", "A heart", "Home"], 
-			1, "assets/images/TheWizardOfOZ_img.jpg"),
+			1, '<iframe src="https://giphy.com/embed/iluqL2zXi1PrO" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>'),
 	new Quiz("What city in Australia has the highest population?",
 			["Melbourne", "Austin", "Sydney", "Brisbane"], 
-			3, "assets/images/Sydney_img.jpg"),
+			3, '<iframe src="https://giphy.com/embed/14w1nWDkMYPIje" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>'),
 	new Quiz("What is the most common type of pitch thrown by pitchers in baseball?",
 			["Curveball", "Changeup", "Slider", "Fastball"], 
-			4, "assets/images/Fastball_img.jpg")
+			4, '<iframe src="https://giphy.com/embed/1jk2iuzz9Knpm" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>')
 ];
 
 var isGameStarted = false;
@@ -140,12 +140,8 @@ $(document).ready(function() {
 			}
 		}
 
-		$("#answer").attr("src", "assets/images/loading.gif");
-
-		setTimeout(function() {
-			$("#answer").attr("src", quizArray[arrPos].image);
-			setTimeout(nextQuestion, 3000);
-		}, 1000);
+		$("#answer").html(quizArray[arrPos].image);
+		setTimeout(nextQuestion, 5000);
 	}
 
 	function endTriviaGame() {
